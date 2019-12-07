@@ -23,7 +23,7 @@ public class MainController extends MObject {
         result.set("msg", "/game");
 
         if (requestData.get("interval") != null) {
-            MBaseUtils.generateStringInKBSize(400, result, (int) requestData.get("interval"));
+            MBaseUtils.generateStringInKBSize(400, result, (long) requestData.get("interval"));
         }
         return result;
     }
@@ -37,7 +37,7 @@ public class MainController extends MObject {
         result.set("msg", "/chat");
 
         if (requestData.get("interval") != null) {
-            MBaseUtils.generateStringInKBSize(1000, result, (int) requestData.get("interval"));
+            MBaseUtils.generateStringInKBSize(1000, result, (long) requestData.get("interval"));
         }
         return result;
     }
